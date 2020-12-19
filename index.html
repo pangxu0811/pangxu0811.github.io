@@ -39,7 +39,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":true,"baidu":"d20197611399e072a20abd69323df354","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":21022741,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -51,7 +51,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>狂奔的蜗牛</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -141,12 +141,12 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/default.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="An elegant Material-Design theme for Hexo">
+            <span class="h2" id="subtitle" title="为机遇的到来，做好足够的准备！">
               
             </span>
 
@@ -178,20 +178,38 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/12/19/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/" target="_self">
+          <img src="/img/index_img.png" srcset="/img/loading.gif" alt="ES6的常用语法">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2020/12/19/hello-world/">Hello World</a>
+        <a href="/2020/12/19/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/">ES6的常用语法</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2020/12/19/hello-world/">
+        <a href="/2020/12/19/ES6%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/">
           
           
             
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
+            var
+之前，js定义变量只有一个关键字：var
+
+var有一个问题，就是定义的变量有时会莫名奇妙的成为全局变量。
+例如这样的一段代码：
+for(var i = 0; i &lt; 5; i++)&#123;
+    console.log(i);
+&#125;
+console.log("循环外：" + i)
+
+你猜下打印的结果是什么？
+
+于是就有了let
+let所声明的变量，只在let命令所
         </a>
       </p>
 
@@ -199,12 +217,439 @@ Quick
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-19 14:15" pubdate>
+            <time datetime="2020-12-19 16:37" pubdate>
               2020-12-19
             </time>
           </div>
         
         
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/">前端</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB%AF/JS/">JS</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+            
+              <a href="/tags/JS/">JS</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/12/20/%E5%B0%9A%E7%A1%85%E8%B0%B7-Spring%20Boot%E7%AC%94%E8%AE%B0/" target="_self">
+          <img src="/img/title_1.jpg" srcset="/img/loading.gif" alt="Spring Boot笔记">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/12/20/%E5%B0%9A%E7%A1%85%E8%B0%B7-Spring%20Boot%E7%AC%94%E8%AE%B0/">Spring Boot笔记</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/12/20/%E5%B0%9A%E7%A1%85%E8%B0%B7-Spring%20Boot%E7%AC%94%E8%AE%B0/">
+          
+          
+            
+          
+          一、Spring Boot 入门1、Spring Boot 简介
+简化Spring应用开发的一个框架；
+整个Spring技术栈的一个大整合；
+J2EE开发的一站式解决方案；
+
+2、微服务2014，martin fowler
+微服务：架构风格（服务微化）
+一个应用应该是一组小型服务；可以通过HTTP的方式进行互通；
+单体应用：ALL IN ONE
+微服务：每一个功能元素最终都是一个可独立替换和独立升
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-12-20 20:46" pubdate>
+              2019-12-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/%E7%AC%94%E8%AE%B0/">笔记</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/11/21/Spring%20Boot%E5%BC%80%E5%8F%91%E5%B0%8F%E8%80%8C%E7%BE%8E%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_self">
+          <img src="/img/title_2.png" srcset="/img/loading.gif" alt="SpringBoot开发博客网站">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/11/21/Spring%20Boot%E5%BC%80%E5%8F%91%E5%B0%8F%E8%80%8C%E7%BE%8E%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">SpringBoot开发博客网站</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/11/21/Spring%20Boot%E5%BC%80%E5%8F%91%E5%B0%8F%E8%80%8C%E7%BE%8E%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+          
+          
+            
+          
+          个人博客功能：
+
+技术组合：
+
+ 后端：Spring Boot + JPA + thymeleaf模板
+ 数据库：MySQL
+ 前端UI：Semantic UI框架
+
+工具与环境：
+
+ IDEA
+ Maven 3
+ JDK 8
+ Axure RP 8
+
+课程内容模块：
+
+ 需求分析与功能规划
+ 页面设计与开发
+ 技术框架搭建
+ 后端管理功能实现
+ 前端管理功能实现
+
+你能学得什么？
+
+ 基于Spr
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-11-21 20:46" pubdate>
+              2019-11-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/SpringBoot/">SpringBoot</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/Java/">Java</a>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/10/23/Redis%E7%9A%84%E5%AE%89%E8%A3%85-%E8%AF%A6%E7%BB%86/" target="_self">
+          <img src="/img/title_3.jpg" srcset="/img/loading.gif" alt="Redis的安装-详细">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/23/Redis%E7%9A%84%E5%AE%89%E8%A3%85-%E8%AF%A6%E7%BB%86/">Redis的安装-详细</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/10/23/Redis%E7%9A%84%E5%AE%89%E8%A3%85-%E8%AF%A6%E7%BB%86/">
+          
+          
+            
+          
+          第一步：下载redis的安装包，上传至服务器中1.获取安装包方式一：官网地址：https://redis.io/​    点击下载。
+
+2.获取安装包方式二：百度网盘链接：https://pan.baidu.com/s/1vKLWzbLQrgtU74YJEtgtCQ​       提取码：dkhl 
+
+3.上传到服务器。（自己练习的话，大家可以自己去装一台虚拟机，我使用的是阿里云的liunx服务器
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-23 20:46" pubdate>
+              2019-10-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/">Redis</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/10/20/JSR303%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C-%E6%A0%A1%E9%AA%8C%E7%B1%BB%E5%9E%8B%E7%BD%97%E5%88%97/" target="_self">
+          <img src="/img/title_4.jpg" srcset="/img/loading.gif" alt="JSR303自定义参数校验-校验类型罗列">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/20/JSR303%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C-%E6%A0%A1%E9%AA%8C%E7%B1%BB%E5%9E%8B%E7%BD%97%E5%88%97/">JSR303自定义参数校验-校验类型罗列</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/10/20/JSR303%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C-%E6%A0%A1%E9%AA%8C%E7%B1%BB%E5%9E%8B%E7%BD%97%E5%88%97/">
+          
+          
+            
+          
+          一、自定义参数校验1、为什么要自定义？ 通过学习，了解到很多常用注解了，但是呢，总是有那么些需求…2、案例分析(手机号格式)2.1、需要验证的实体 Bean123456789101112public class LoginVo &#123;        @NotNull    @IsMobile //自定义的注解    private String mobile;        @NotNull
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-20 20:46" pubdate>
+              2019-10-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/Spring/">Spring</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/">工具类</a>
+            
+              <a href="/tags/Java/">Java</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/10/01/aop%20%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%20-%20%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/" target="_self">
+          <img src="/img/index_img.png" srcset="/img/loading.gif" alt="aop 面向切面 - 日志记录">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/10/01/aop%20%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%20-%20%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/">aop 面向切面 - 日志记录</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/10/01/aop%20%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%20-%20%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/">
+          
+          
+            
+          
+          Springboot对 AOP的配置：
+12spring.aop.auto=true # Add @EnableAspectJAutoProxy.spring.aop.proxy-target-class=true # Whether subclass-based (CGLIB) proxies are to be created (true), as opposed to standard Ja
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-10-01 20:46" pubdate>
+              2019-10-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/Spring/">Spring</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/Java/">Java</a>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/02/15/Java%E5%90%8E%E5%8F%B0%E6%A1%86%E6%9E%B6%E5%A4%A7%E7%BA%B2/" target="_self">
+          <img src="/img/index_img.png" srcset="/img/loading.gif" alt="JAVA前端到后台常用框架介绍">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2019/02/15/Java%E5%90%8E%E5%8F%B0%E6%A1%86%E6%9E%B6%E5%A4%A7%E7%BA%B2/">JAVA前端到后台常用框架介绍</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2019/02/15/Java%E5%90%8E%E5%8F%B0%E6%A1%86%E6%9E%B6%E5%A4%A7%E7%BA%B2/">
+          
+          
+            
+          
+          JAVA前端到后台常用框架介绍一、SpringMVC
+http://blog.csdn.net/evankaka/article/details/45501811
+Spring Web MVC是一种基于Java的实现了Web MVC设计模式的请求驱动类型的轻量级Web框架，即使用了MVC架构模式的思想，将web层进行职责解耦，基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-02-15 20:46" pubdate>
+              2019-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+            
+              <a href="/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BC%80%E5%8F%91/">开发</a>
+            
+              <a href="/tags/Java/">Java</a>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF/">后端</a>
+            
+          </div>
         
       </div>
     </article>
@@ -256,11 +701,45 @@ Quick
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+     <a href="https://blog.csdn.net/qq_42166923/" target="_blank" rel="nofollow noopener"><span>Forever</span></a> <i class="iconfont icon-love"></i> <a href="http://www.xn--zts659c1iaj2kf5z.xyz/" target="_blank" rel="nofollow noopener"><span>狂奔的蜗牛</span></a> 
   </div>
   
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
 
   
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        湘ICP备20004471号
+      </a>
+    </span>
+    
+  </div>
+
 
   
 </footer>
@@ -311,6 +790,8 @@ Quick
 
 
 
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
 
 
 
@@ -348,6 +829,33 @@ Quick
 
 
 
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d20197611399e072a20abd69323df354";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    <!-- 51.la Analytics -->
+    <script defer type="text/javascript" src="//js.users.51.la/21022741.js"></script>
+  
+
+  
 
 
 
